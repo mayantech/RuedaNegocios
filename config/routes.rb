@@ -1,5 +1,5 @@
 RuedaNegocios::Application.routes.draw do
-  get "about" => "page/home"
+  get "about" => "page#about"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
