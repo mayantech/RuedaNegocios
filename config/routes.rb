@@ -1,4 +1,6 @@
 RuedaNegocios::Application.routes.draw do
+  resources :estados
+
   devise_for :users
   get "about" => "page#about"
   # The priority is based upon order of creation: first created -> highest priority.

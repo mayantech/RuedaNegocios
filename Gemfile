@@ -29,6 +29,7 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'bootstrap-sass'
 gem 'devise', '~> 3.2.4'
+gem 'countries', '~> 0.9.3'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

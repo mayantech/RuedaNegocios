@@ -1,0 +1,24 @@
+<div class="form-group">
+  <%= form_for(@estado) do |f| %>
+    <% if @estado.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@estado.errors.count, "error") %> prohibited this estado from being saved:</h2>
+
+        <ul>
+        <% @estado.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label :descripcion %><br>
+      <%= f.text_field :descripcion, class: "form-control" %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit class: "btn btn-primary"  %>
+    </div>
+  <% end %>
+</div>
